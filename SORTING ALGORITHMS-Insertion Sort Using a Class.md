@@ -34,9 +34,32 @@ To develop a Python class with functions to:
 ---
 
 ## 💻 PROGRAM:
-
-ADD CODE HERE
-
+```
+  def create_matrix(n,m):
+      M=[]
+      for i in range(n):
+          row=[]
+          for j in range(m):
+              x=int(input())
+              row.append(x)
+          M.append(row)
+      return M 
+  r,c=input().split()
+  A=create_matrix(int(r),int(c))
+  B=create_matrix(int(r),int(c))
+  C=[]
+  for i in range(int(r)):
+      R=[]
+      for j in range(int(c)):
+          item=A[i][j]-B[i][j]
+          R.append(item)
+      C.append(R)
+  print(A)
+  print(B)
+  print(C)
+```
 ## OUTPUT:
+<img width="752" height="802" alt="image" src="https://github.com/user-attachments/assets/c0c5e3d0-9076-4dd4-994c-3b1282ed0ec7" />
 
 ## RESULT:
+<img width="752" height="802" alt="image" src="https://github.com/user-attachments/assets/9d0e5d92-1dbb-4266-94bc-1907faa835f5" />
